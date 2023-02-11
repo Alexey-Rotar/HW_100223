@@ -15,21 +15,14 @@ uint Ackermann(uint m, uint n)
     }
 }
 
-Console.WriteLine("Для функции Аккермана A(m, n)");  
-Console.WriteLine("введите аргумент m:");  
+Console.WriteLine("Для функции Аккермана A(m, n)\nвведите аргумент m:");  
 uint m;
 while (!uint.TryParse(Console.ReadLine(), out m))
-{
-    Console.WriteLine("Некорректное значение!");
-    Console.WriteLine("введите аргумент m:");              
-} 
+    Console.WriteLine("Некорректное значение!\nвведите аргумент m:");          
 
 Console.WriteLine("введите аргумент n:");  
 uint n;
 while (!uint.TryParse(Console.ReadLine(), out n))
-{
-    Console.WriteLine("Некорректное значение!");
-    Console.WriteLine("введите аргумент n:");              
-}  
+    Console.WriteLine("Некорректное значение!\nвведите аргумент m:");             
 
 Console.WriteLine($"A({m}, {n}) = {Ackermann(m, n)}");
