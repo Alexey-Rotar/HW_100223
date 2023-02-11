@@ -18,17 +18,12 @@ uint SumRangeNaturalValues(uint m, uint n)
 Console.WriteLine("Введите натуральное число M:");  
 uint m;
 while (!uint.TryParse(Console.ReadLine(), out m) || m <= 0)
-{
-    Console.WriteLine("Некорректное значение!");
-    Console.WriteLine("Введите натуральное число M:");              
-} 
+    Console.WriteLine("Некорректное значение!\nВведите натуральное число M:");
 
 Console.WriteLine("Введите натуральное число N:");  
 uint n;
 while (!uint.TryParse(Console.ReadLine(), out n) || n <= 0)
-{
-    Console.WriteLine("Некорректное значение!");
-    Console.WriteLine("Введите натуральное число N:");              
-}  
+    Console.WriteLine("Некорректное значение!\nВведите натуральное число N:");
+                
 
 Console.WriteLine($"Сумма натуральных элементов от {m} до {n}: {SumRangeNaturalValues(m, n)}");
