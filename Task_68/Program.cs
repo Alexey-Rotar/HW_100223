@@ -15,8 +15,8 @@ uint Ackermann(uint m, uint n)
     }
 }
 
-Console.WriteLine("Для функции Аккермана A(m, n)\nвведите аргумент m:");  
-//Console.WriteLine("введите аргумент m:");  
+Console.WriteLine("Для функции Аккермана A(m, n)");  
+Console.WriteLine("введите аргумент m:");  
 uint m;
 while (!uint.TryParse(Console.ReadLine(), out m))
 {
