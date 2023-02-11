@@ -23,6 +23,6 @@ while (!uint.TryParse(Console.ReadLine(), out m))
 Console.WriteLine("введите аргумент n:");  
 uint n;
 while (!uint.TryParse(Console.ReadLine(), out n))
-    Console.WriteLine("Некорректное значение!\nвведите аргумент m:");             
+    Console.WriteLine("Некорректное значение!\nвведите аргумент n:");             
 
 Console.WriteLine($"A({m}, {n}) = {Ackermann(m, n)}");
